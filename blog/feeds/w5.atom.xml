@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w5</title><link href="./" rel="alternate"></link><link href="./feeds/w5.atom.xml" rel="self"></link><id>./</id><updated>2024-04-11T08:17:27+08:00</updated><entry><title>2024 Spring 課程 w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T15:00:00+08:00</published><updated>2024-04-11T08:17:27+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;這週為課堂影片講解上字幕,組長依序分配給每個成員所要完成的影片及逐字稿,上傳至Youtube,並且在動態上完成影片摘要和心得,完成之後上傳&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w5</title><link href="./" rel="alternate"></link><link href="./feeds/w5.atom.xml" rel="self"></link><id>./</id><updated>2024-04-11T08:26:23+08:00</updated><entry><title>2024 Spring 課程 w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-21T15:00:00+08:00</published><updated>2024-04-11T08:26:23+08:00</updated><author><name>kmol</name></author><id>tag:None,2024-03-21:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;這週為課堂影片講解上字幕,組長依序分配給每個成員所要完成的影片及逐字稿,上傳至Youtube,並且在動態上完成影片摘要和心得,完成之後上傳&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;這週為課堂影片講解上字幕,組長依序分配給每個成員所要完成的影片及逐字稿,上傳至Youtube,並且在動態上完成影片摘要和心得,完成之後上傳&lt;/p&gt;
 
 
@@ -7,5 +7,11 @@
 &lt;p&gt;在影片上填上字幕, 另行上傳到可以嵌入到各分組的網站上
 從影片字幕中整理出逐字稿, 放在影片下方, 以 .txt 連結安排
 並在各嵌入的教學影片下方, 以摘要方式說明該影片的教學重點&lt;/p&gt;
+&lt;p&gt;說明如何將倉儲 import 至 Replit 改版後推回 github&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cqwZp17qOv8?si=0BLcL72aQzpquPnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kk_5DmBgf-A?si=31PUxPLFmKG_rswD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry></feed>
+&lt;p&gt;[文字稿1]
+[https://mdecd2024.github.io/2b-midbg7/downloads/4..txt]&lt;/p&gt;
+&lt;p&gt;如何利用 Gidpod 維護分組網站&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kk_5DmBgf-A?si=31PUxPLFmKG_rswD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;[文字稿2]
+[https://mdecd2024.github.io/2b-midbg7/downloads/9..txt]&lt;/p&gt;</content><category term="w5"></category><category term="網誌編寫"></category></entry></feed>
