@@ -77,132 +77,47 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 <p>從 1 累加到 100:</p>
 <p><button id="add1to100">1 add to 100</button></p>
 <p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
-<!-- 導入 brython 程式庫 -->
-<p>
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
-}
-</script>
-</p>
-<p><!-- 導入 FileSaver 與 filereader --></p>
-<p>
-<script src="/static/ace/FileSaver.min.js" type="text/javascript"></script>
-<script src="/static/ace/filereader.js" type="text/javascript"></script>
-</p>
-<p><!-- 導入 ace --></p>
-<p>
-<script src="/static/ace/ace.js" type="text/javascript"></script>
-<script src="/static/ace/ext-language_tools.js" type="text/javascript"></script>
-<script src="/static/ace/mode-python3.js" type="text/javascript"></script>
-<script src="/static/ace/snippets/python.js" type="text/javascript"></script>
-</p>
-<p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
-<script src="/static/Cango-24v03-min.js"></script>
-<script src="/static/gearUtils-09.js"></script>
-<script src="/static/SVGpathUtils-6v03-min.js"></script>
-<script src="/static/sylvester.js"></script>
-<script src="/static/PrairieDraw.js"></script>
-</p>
-<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
-<p>
-<script type="text/javascript">
-function doSave(storage_id, filename){
-    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
-    filename = document.getElementById(filename).value
-    saveAs(blob, filename+".py");
-}
-</script>
-</p>
-<p>
-<script type="text/python3">
-from browser import document as doc
-import ace
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
-def run1():
-    # 利用 get 取下 src 變數值
-    try:
-        url = doc.query["src"]
-    except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
-    prog = open(url).read()
-
-    # 將程式載入編輯區
-    Ace1.editor.setValue(prog)
-    Ace1.editor.scrollToRow(0)
-    Ace1.editor.gotoLine(0)
-    # 直接執行程式
-    #ns = {'__name__':'__main__'}
-    #exec(prog, ns)
-    # 按下 run 按鈕
-    Ace1.run()
-
-# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
-doc['kw_run1'].bind('click', Ace1.run)
-doc['kw_show_console1'].bind('click', Ace1.show_console)
-doc['kw_clear_console1'].bind('click', Ace1.clear_console)
-doc['clear_bd1'].bind('click', clear_bd1)
-# 呼叫函式執行
-run1()
-</script>
-</p>
-<p><!-- add 1 to 100 開始 -->
-<script type="text/python3">
-from browser import document as doc
-import ace
-
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-
-# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
-Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
-
-# 從 gist 取得程式碼
-add_src = open(add1to100_url).read()
-def add(ev):
-    Ace2.editor.setValue(add_src)
-    Ace2.editor.scrollToRow(0)
-    Ace2.editor.gotoLine(0)
-    Ace2.run()
-
-# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
-doc["add1to100"].bind('click', add)
-</script>
-</p>
-<p><!-- add 1 to 100 結束--></p>
-<!-- editor1 開始 -->
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<h1>W3</h1>
+<h1>作業</h1>
+<h2>W3</h2>
+<p><img alt="" height="462" src="/images/messageImage_1713354819939.jpg" width="326"/></p>
+<p>組長所分配給每個組員所需要翻譯的文章內容</p>
+<p>我所被分配到的頁數為21~31</p>
+<p>下面之pdf為21~31的翻譯內容</p>
 <p><a href="/downloads/tesi  21-31 41123233.pdf">/downloads/tesi 21-31 41123233.pdf</a></p>
 <p></p>
+<h2>W5</h2>
 <p></p>
-<p></p>
-<h1>W5</h1>
 <h4 class="style-scope ytd-watch-metadata"><yt-formatted-string class="style-scope ytd-watch-metadata" force-default-style="">說明如何將倉儲 import 至 Replit 改版後推回 github 4 1</yt-formatted-string></h4>
 <h4><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cqwZp17qOv8" width="560"></iframe></h4>
 <h4><a href="https://mdecd2024.github.io/2b-midbg7/downloads/4..txt">逐字稿</a></h4>
-<p>摘要:</p>
-<p>心得:</p>
+<p></p>
+<p><strong>摘要</strong>:</p>
+<p>說明如何將倉儲 import 至 Replit 改版後推回</p>
+<p>如何設定、得到網誌的連結的步驟說明</p>
+<p>從markdown更改或更新網誌內容</p>
+<p>並將其網誌連結貼到個人動態，方便之後去做使用</p>
+<p></p>
+<p><strong>心得</strong>:</p>
+<p>我覺得這次所用的網誌比較先前的可以比較清楚的看到和劃分自己所布置的網站頁面</p>
+<p>使用者也可以清楚的看到大標題和裡面的內容</p>
+<p></p>
 <p></p>
 <h4><yt-formatted-string class="style-scope ytd-watch-metadata" force-default-style="">如何利用 Gidpod 維護分組網站 9</yt-formatted-string></h4>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/kk_5DmBgf-A" width="560"></iframe></p>
 <p><a href="https://mdecd2024.github.io/2b-midbg7/downloads/9..txt">逐字稿</a></p>
+<p></p>
 <p>摘要:</p>
+<p>如何利用 Gidpod 維護分組網站</p>
+<p>說明設定在gidpod的各步驟</p>
+<p>在pages下就有<span>gidpod</span></p>
+<p><span>點入儀表板，也可從裡面STOP</span></p>
+<p><span></span></p>
+<p><span></span></p>
 <p>心得:</p>
+<p>在組別的動態網站上添加gidpod，貼上連結，就可點入儀表板，也可從裡面STOP</p>
+<p></p>
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 <p></p>
