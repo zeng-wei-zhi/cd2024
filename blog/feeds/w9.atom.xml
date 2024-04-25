@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w9</title><link href="./" rel="alternate"></link><link href="./feeds/w9.atom.xml" rel="self"></link><id>./</id><updated>2024-04-25T07:05:06+08:00</updated><entry><title>2024 Spring 課程 W9</title><link href="./41123233-W9-blog.html" rel="alternate"></link><published>2024-04-18T15:00:00+08:00</published><updated>2024-04-25T07:05:06+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-04-18:./41123233-W9-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h1&gt;鋼球平衡台 PID 控制與模擬&lt;/h1&gt;
+&lt;p&gt;以下為利用 PID 控制 CoppeliaSim 鋼球平衡台場景的 ZMQ RemoteAPI Python 程式, 請利用 Python 模組將系統控制過程, 鋼球在平衡台上的 x 方向座標與 y 方向, 利用 matplotlib 畫出來. "這裡附上原本的 PID 控制程式碼"
+Model
+使用 Matplotlib 將 CoppeliaSim 鋼球平衡台的 x, y 座標視覺化
+由於您沒有提供原始的 PID 控制程式碼，我將提供一個範例程式碼框架，其中包含使用 Matplotlib 繪製 x, y 座標的功能。請將您的 PID 控制邏輯和與 CoppeliaSim 的通信部分添加到相應的位置。
+import zmq
+import time
+import matplotlib.pyplot as plt&lt;/p&gt;
+&lt;h1&gt;CoppeliaSim 連線資訊&lt;/h1&gt;
+&lt;p&gt;HOST = "127.0.0.1"  # 更改為您的 CoppeliaSim 主機地址
+PORT = 23000         # 更改為您的 CoppeliaSim 端口號&lt;/p&gt;
+&lt;h1&gt;建立 ZMQ context 和 socket&lt;/h1&gt;
+&lt;p&gt;context = zmq.Context()
+socket = context.socket(zmq.REQ)
+socket.connect("tcp://{}:{}".format(HOST, PORT))&lt;/p&gt;
+&lt;h1&gt;PID 控制參數 (替換為您的實際參數)&lt;/h1&gt;
+&lt;p&gt;Kp = 1.0
+Ki = 0.0
+Kd = 0.0&lt;/p&gt;
+&lt;h1&gt;初始化圖表&lt;/h1&gt;
+&lt;p&gt;plt.ion()  # 開啟互動模式
+fig, ax = plt.subplots()
+x_data, y_data = [], []
+line, = ax.plot(x_data, y_data, 'r-')
+ax.set_xlim([-1, 1])  # 設定 x 軸範圍 (根據您的場景調整)
+ax.set_ylim([-1, 1])  # 設定 y 軸範圍 (根據您的場景調整)
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+plt.title("Ball Position")&lt;/p&gt;
+&lt;h1&gt;主循環&lt;/h1&gt;
+&lt;p&gt;while True:
+    # 讀取鋼球當前 x, y 座標 (替換為您的實際讀取方式)
+    x, y = get_ball_position(socket)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# PID 控制邏輯 (替換為您的實際 PID 控制邏輯)&lt;/span&gt;
+&lt;span class="n"&gt;control_signal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pid_control&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Kp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ki&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Kd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# 將控制信號發送到 CoppeliaSim (替換為您的實際發送方式)&lt;/span&gt;
+&lt;span class="n"&gt;send_control_signal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;control_signal&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# 更新圖表數據&lt;/span&gt;
+&lt;span class="n"&gt;x_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;y_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;y_data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;canvas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;canvas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;flush_events&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;# 調整延遲時間&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;停止仿真 (替換為您的實際停止方式)&lt;/h1&gt;
+&lt;p&gt;stop_simulation(socket)&lt;/p&gt;
+&lt;h1&gt;關閉 socket 和 context&lt;/h1&gt;
+&lt;p&gt;socket.close()
+context.term()
+Use code with caution.
+Python
+說明:
+連線到 CoppeliaSim: 使用 ZMQ 建立與 CoppeliaSim 的連接。
+PID 參數: 設定您的 PID 控制器的參數 (Kp, Ki, Kd)。
+初始化圖表: 使用 Matplotlib 创建一个实时更新的图表，用于显示 x, y 좌표。
+主循环:
+讀取鋼球的 x, y 座標。
+使用 PID 控制邏輯计算控制信号。
+將控制信號發送到 CoppeliaSim。
+更新圖表數據並顯示。
+停止仿真: 停止 CoppeliaSim 的仿真。
+请注意:
+您需要将 get_ball_position, pid_control, send_control_signal 和 stop_simulation 替换为您自己的函数，以完成与 CoppeliaSim 的通信和控制逻辑。
+根據您的場景調整 x 軸和 y 軸的範圍。
+調整 time.sleep 的延遲時間，以控制更新頻率。&lt;/p&gt;</content><category term="w9"></category><category term="網誌編寫"></category></entry></feed>
