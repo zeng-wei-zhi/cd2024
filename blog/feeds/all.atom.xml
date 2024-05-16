@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-01T13:40:31+08:00</updated><entry><title>2024 Spring 課程 W10</title><link href="./41123233-W10-blog.html" rel="alternate"></link><published>2024-04-25T15:00:00+08:00</published><updated>2024-05-01T13:40:31+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-04-25:./41123233-W10-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-16T15:00:00+08:00</updated><entry><title>2024 Spring 課程 W13</title><link href="./41123233-W16-blog.html" rel="alternate"></link><published>2024-05-16T15:00:00+08:00</published><updated>2024-05-16T08:26:20+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-05-16:./41123233-W16-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h1&gt;任務1&lt;/h1&gt;</content><category term="w13"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W12</title><link href="./41123233-W12-blog.html" rel="alternate"></link><published>2024-05-09T15:00:00+08:00</published><updated>2024-05-16T08:25:46+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-05-09:./41123233-W12-blog.html</id><summary type="html">&lt;p&gt;利用NX進行繪製圖片錄影，小組進行分配工作&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;利用NX進行繪製圖片錄影，小組進行分配工作&lt;/p&gt;
+
+
+&lt;h1&gt;NX零件圖與錄影檔&lt;/h1&gt;
+&lt;p&gt;零件4：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/111XF_-WQ4fueM25CdNIo5dkH-2DYYZMz/view?usp=drive_link"&gt;錄影檔&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1a5qhJiVRtfj3uYy33Thg6EdTLKexX03v/view?usp=drive_link"&gt;零件檔&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/11AeuHU-K-331C8zVIzf93uTL1_yPKBNm/view?usp=drive_link"&gt;完成圖&lt;/a&gt;&lt;/p&gt;</content><category term="w12"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W11</title><link href="./41123233-W11-blog.html" rel="alternate"></link><published>2024-05-02T15:00:00+08:00</published><updated>2024-05-16T07:51:25+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-05-02:./41123233-W11-blog.html</id><summary type="html">&lt;p&gt;利用上週加入的全班倉儲,在裡面編寫前10週之統整心得,以每組為例&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;利用上週加入的全班倉儲,在裡面編寫前10週之統整心得,以每組為例&lt;/p&gt;
+
+
+&lt;h1&gt;利用上週加入的全班的倉儲,在裡面編寫前10週的來統整心得&lt;/h1&gt;
+&lt;p&gt;因為每個人都可以在上面做更新更改, 這樣就會出現操作上的問題，push得時候只能一個人push,太多人同時推會導致網站亂掉,為了避免此現象的發生,在個人或各組完成階段性改版之前,先透過獨立分支進行資料改版提交與推送,等個人階段性版本確定後, 再與分組分支合併, 最後各組的階段性版本再與建立網頁的主分支進行合併。&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>2024 Spring 課程 W10</title><link href="./41123233-W10-blog.html" rel="alternate"></link><published>2024-04-25T15:00:00+08:00</published><updated>2024-05-01T13:40:31+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-04-25:./41123233-W10-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;任務1&lt;/h1&gt;
 &lt;p&gt;根據老師所給的 2a.txt 裡的['學號', 'Github 帳號', '組別'], 以下是利用 Python 寫的初步資料數列. &lt;/p&gt;

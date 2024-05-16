@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w11</title><link href="./" rel="alternate"></link><link href="./feeds/w11.atom.xml" rel="self"></link><id>./</id><updated>2024-05-16T07:51:25+08:00</updated><entry><title>2024 Spring 課程 W11</title><link href="./41123233-W11-blog.html" rel="alternate"></link><published>2024-05-02T15:00:00+08:00</published><updated>2024-05-16T07:51:25+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-05-02:./41123233-W11-blog.html</id><summary type="html">&lt;p&gt;利用上週加入的全班倉儲,在裡面編寫前10週之統整心得,以每組為例&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;利用上週加入的全班倉儲,在裡面編寫前10週之統整心得,以每組為例&lt;/p&gt;
+
+
+&lt;h1&gt;利用上週加入的全班的倉儲,在裡面編寫前10週的來統整心得&lt;/h1&gt;
+&lt;p&gt;因為每個人都可以在上面做更新更改, 這樣就會出現操作上的問題，push得時候只能一個人push,太多人同時推會導致網站亂掉,為了避免此現象的發生,在個人或各組完成階段性改版之前,先透過獨立分支進行資料改版提交與推送,等個人階段性版本確定後, 再與分組分支合併, 最後各組的階段性版本再與建立網頁的主分支進行合併。&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry></feed>
