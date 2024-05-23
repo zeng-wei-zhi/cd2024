@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w10</title><link href="./" rel="alternate"></link><link href="./feeds/w10.atom.xml" rel="self"></link><id>./</id><updated>2024-05-01T13:40:31+08:00</updated><entry><title>2024 Spring 課程 W10</title><link href="./41123233-W10-blog.html" rel="alternate"></link><published>2024-04-25T15:00:00+08:00</published><updated>2024-05-01T13:40:31+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-04-25:./41123233-W10-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統 - w10</title><link href="./" rel="alternate"></link><link href="./feeds/w10.atom.xml" rel="self"></link><id>./</id><updated>2024-05-23T05:15:41+08:00</updated><entry><title>41123233-W10</title><link href="./41123233-W10-blog.html" rel="alternate"></link><published>2024-04-25T15:00:00+08:00</published><updated>2024-05-23T05:15:41+08:00</updated><author><name>41123233</name></author><id>tag:None,2024-04-25:./41123233-W10-blog.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h1&gt;任務1&lt;/h1&gt;
 &lt;p&gt;根據老師所給的 2a.txt 裡的['學號', 'Github 帳號', '組別'], 以下是利用 Python 寫的初步資料數列. &lt;/p&gt;
